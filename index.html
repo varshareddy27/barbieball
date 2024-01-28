@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css graphics</title>
+    <style>
+        *{
+            background-color:rgb(225, 179, 214)
+           
+        }
+        h1{
+            color:blueviolet;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .container{
+position: relative;
+height:85vh;
+ width: 90vw;
+background-color: brown;
+background-image: url("barbie\ img.jpeg");
+      border:2px solid violet;
+       }
+        .box{
+            width: 110px;
+            height: 110px;
+            border-radius: 70px;
+            position: absolute;
+            bottom:0;
+            left:0;
+            border:2px solid black;
+            background-color: rgb(177, 123, 227);
+       animation: animate 3s linear infinite,animate2 1s ease-out infinite alternate;
+          
+    }
+    
+        @keyframes animate{
+            from{
+left:0;
+            }
+            to{
+left:100%
+            }
+        }
+        @keyframes animate2{
+            from{
+bottom:0;
+            }
+            to{
+bottom:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Barbie World</h1>
+    <div class="container">
+        <div class="box">
+<div class="box3">
+
+</div>
+        </div>
+    </div>
+</body>
+</html>
